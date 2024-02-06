@@ -1,0 +1,156 @@
+.body{
+    color: #eebb7c
+    
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    max-width: 358px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 2.5rem;
+    color: #e48c21;
+    text-align: center;
+}
+
+.score-container{
+    min-width: 300px;
+    padding: 5px 20px;
+    border: 1px solid #eebb7c;
+    box-shadow: 9px 9px 9px #eebb7c31;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+}
+
+.stats {
+    display: flex;
+    gap: 50px;
+}
+
+h2{
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.game-container{
+    margin-top: 15px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #eebb7c;
+    box-shadow: 9px 9px 9px #eebb7c31;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    font-size: 1.3rem;
+}
+
+td{
+    background-color: #eebb7c;
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+td:not(.good):hover{
+    background-color: #f3a546;
+}
+
+.good{
+    background-color:#ecdcc9;
+    color: white;
+}
+
+
+button{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    grid-area: 3;
+    border: none;
+    background-color: coral;
+    font-size: 16px;
+    color: antiquewhite;
+    text-transform: capitalize;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.btn-container{
+    grid-area: 3/1/3/3;
+    display: flex;
+    justify-content: center;
+}
+
+dialog{
+    border-radius: 9px;
+    background-color: #fff7ec;
+    width: 240px;
+}
+
+button.exit {
+    align-self: self-end;
+    background-color: darkslategray;
+    border: none;
+    transition: all 500ms;
+}
+
+h3 {
+    margin-top: 0;
+    color: #ef7900
+}
+
+h4 {
+    margin: 2px 0 10px 0;
+    font-size: 1.5rem;
+    color: #ef7900;
+}
+
+p {
+    margin: 0;
+}
+
+.end-game .container{
+    display: flex;
+    align-items: center;
+}
+
+
+.time-to-beat {
+    margin-top: 8px;
+    display: none;
+}
